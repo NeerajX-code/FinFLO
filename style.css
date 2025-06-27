@@ -1,0 +1,805 @@
+@font-face {
+  font-family: "Robuck";
+  src: url("/MonkeyProject/assets/fonts/robuck-regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Lexend";
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: hsl(46.96, 100%, 90.98%);
+}
+main .sec1 {
+  width: 100%;
+  height: 780px;
+  padding: 3rem 4rem;
+  position: relative;
+}
+main .sec1 nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .sec1 nav h2 {
+  font-size: 2rem;
+  color: rgb(251, 241, 205);
+}
+main .sec1 nav div {
+  display: flex;
+  gap: 1.5rem;
+}
+main .sec1 nav div a {
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(251, 241, 205);
+}
+main .sec1 nav .addMoney {
+  padding: 12px 18px;
+  border-radius: 50px;
+  color: black;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: hsl(46.96, 100%, 90.98%);
+}
+main .sec1 .sec1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+main .sec1 .sec1-text h1 {
+  font-size: 14rem;
+  font-weight: 900;
+  line-height: 160px;
+  color: rgb(251, 241, 205);
+}
+main .sec1 .sec1-text h2 {
+  font-size: 9rem;
+  font-weight: 900;
+  color: rgb(251, 241, 205);
+}
+main .sec1 .sec1-absImg {
+  position: absolute;
+  bottom: -4px;
+  left: 25%;
+  z-index: 50;
+}
+main .sec1 .sec1-absImg img {
+  width: 48rem;
+}
+main .sec1 .sec1-absText {
+  position: absolute;
+  z-index: 1;
+  right: 8%;
+  bottom: 10%;
+}
+main .sec1 .sec1-absText .year {
+  font-size: 12rem;
+  font-weight: 900;
+  height: 162px;
+  overflow: hidden;
+  color: rgb(251, 241, 205);
+}
+main .sec1 .sec1-absText p {
+  padding-top: 20px;
+  padding-left: 4.2rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: rgb(251, 241, 205);
+}
+main .sec1 .sec1-relativeBox {
+  width: 420px;
+  background-color: hsl(46.96, 100%, 90.98%);
+  position: absolute;
+  transform: rotate(10deg);
+  border-radius: 15px;
+  padding: 30px;
+  overflow: hidden;
+  left: 4%;
+  bottom: -8%;
+}
+main .sec1 .sec1-relativeBox .sec1-absBox {
+  padding-top: 30px;
+  padding-left: 12px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  transform: rotate(-12deg);
+  gap: 10px;
+}
+main .sec1 .sec1-relativeBox .sec1-absBox button {
+  display: flex;
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 12px;
+  justify-content: space-between;
+  color: hsl(48, 100%, 5.88%);
+  border: none;
+  background: none;
+  transition: all 2ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+main .sec1 .sec1-relativeBox .sec1-absBox button img {
+  width: 25px;
+}
+main .sec1 .sec1-relativeBox .sec1-absBox button:hover {
+  background-color: hsl(48, 100%, 5.88%);
+  color: rgb(251, 241, 205);
+}
+main .sec1 .sec1-relativeBox .sec1-absBox button:hover img {
+  filter: brightness(0) invert(1);
+}
+main .sec2 {
+  width: 100%;
+  height: 760px;
+  padding: 3rem 2rem;
+  position: relative;
+}
+main .sec2 .text {
+  width: 880px;
+  font-size: 3rem;
+  z-index: 20;
+}
+main .sec2 .text h1 {
+  color: black;
+  font-weight: 900;
+}
+main .sec2 .text h1 span {
+  color: orangered;
+}
+main .sec2 .value {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  z-index: 1;
+}
+main .sec2 .value h1 {
+  color: hsl(46.32, 78.08%, 85.69%);
+  font-size: 15rem;
+}
+main .sec2 .sec2-Card {
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-size: cover;
+  border-radius: 10px;
+  background-image: url("/MonkeyProject/assets/Abstract Orange Wavy Pattern.png");
+  padding: 24px;
+  position: absolute;
+  right: 12%;
+  bottom: 28%;
+  transform: rotate(6deg);
+  z-index: 50;
+}
+main .sec2 .sec2-Card h2 {
+  width: 60%;
+}
+main .sec2 .sec2-Card button {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 15px;
+  background-color: rgba(86, 53, 18, 0.319);
+}
+main .sec2 .sec2-Card button span {
+  border-radius: 6px;
+  padding: 4px 6px;
+  background-color: rgba(226, 226, 15, 0.548);
+}
+main .sec2 .sec2-absBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+}
+main .sec2 .sec2-absBox button {
+  color: rgb(56, 25, 12);
+  display: flex;
+  gap: 12px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 12px 15px;
+}
+main .sec2 .sec2-absBox button img {
+  width: 25px;
+}
+main .sec2 .sec2-para {
+  width: 50%;
+  color: rgb(58, 36, 14);
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+}
+main .sec3 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  gap: 1rem;
+  padding: 4rem;
+  justify-content: space-between;
+}
+main .sec3 .sec3-left {
+  width: 88%;
+  background-image: url("/MonkeyProject/assets/ChatGPT Image Jun 26, 2025, 12_29_39 AM.png");
+  background-size: cover;
+  border-radius: 12px;
+  position: relative;
+  padding: 4rem;
+  overflow: hidden;
+}
+main .sec3 .sec3-left h1 {
+  font-size: 3rem;
+  font-size: 900;
+}
+main .sec3 .sec3-left p {
+  width: 40%;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
+main .sec3 .sec3-left p span {
+  color: yellow;
+}
+main .sec3 .sec3-left .BlackCard {
+  width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -12%;
+  left: 6%;
+  transform: rotate(2deg);
+  background-color: black;
+}
+main .sec3 .sec3-left .WhiteCard {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -12%;
+  left: 6%;
+  transform: rotate(-8deg);
+  background-color: rgb(254, 251, 236);
+  z-index: 100;
+}
+main .sec3 .sec3-left .WhiteCard .lines {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+main .sec3 .sec3-left .WhiteCard .lines span {
+  width: 4px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: rgb(234, 152, 122);
+}
+main .sec3 .sec3-left .WhiteCard .h1 {
+  height: 70px;
+  overflow: hidden;
+  transform: rotate(2deg);
+}
+main .sec3 .sec3-left .WhiteCard .h1 h1 {
+  font-size: 5.4rem;
+  color: rgb(43, 21, 13);
+}
+main .sec3 .sec3-left .WhiteCard .bottom {
+  height: 85px;
+  padding-top: 1rem;
+  transform: rotate(6deg);
+}
+main .sec3 .sec3-left .BlackCardForYellowCard {
+  width: 280px;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -24%;
+  left: 29%;
+  transform: rotate(-6deg);
+  background-color: black;
+  z-index: 80;
+}
+main .sec3 .sec3-left .YellowCard {
+  width: 280px;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -26%;
+  left: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: rotate(6deg);
+  background-color: hsl(49.57, 100%, 68.43%);
+  z-index: 200;
+}
+main .sec3 .sec3-left .YellowCard .lines {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+}
+main .sec3 .sec3-left .YellowCard .lines span {
+  width: 10%;
+  height: 10px;
+  border-radius: 8px;
+  background-color: black;
+}
+main .sec3 .sec3-left .YellowCard .text {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+main .sec3 .sec3-left .YellowCard .text p {
+  position: static;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(43, 21, 13);
+}
+main .sec3 .sec3-left .YellowCard .text h1 {
+  font-size: 6rem;
+  color: rgb(43, 21, 13);
+}
+main .sec3 .sec3-left .YellowCard .text h2 {
+  display: flex;
+  align-items: end;
+  font-size: 3rem;
+  padding-bottom: 4px;
+  color: rgb(43, 21, 13);
+}
+main .sec3 .sec3-left .sec3-arrows {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  right: 8%;
+  bottom: 12%;
+}
+main .sec3 .sec3-left .sec3-arrows .arrow-left {
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background: none;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+main .sec3 .sec3-left .sec3-arrows .arrow-left img {
+  width: 25px;
+  filter: invert(1);
+}
+main .sec3 .sec3-left .sec3-arrows .arrow-right {
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background: none;
+  border-radius: 50%;
+  background-color: orangered;
+}
+main .sec3 .sec3-left .sec3-arrows .arrow-right img {
+  width: 25px;
+  filter: invert(1);
+}
+main .sec3 .sec3-right {
+  width: 12%;
+  background-image: url("/MonkeyProject/assets/Abstract Orange Wavy Pattern.png");
+  background-size: cover;
+  border-radius: 12px;
+}
+main .sec4 {
+  width: 100%;
+  height: 680px;
+  position: relative;
+}
+main .sec4 .icon {
+  position: absolute;
+  top: 35%;
+  left: 4%;
+}
+main .sec4 .icon img {
+  width: 120px;
+}
+main .sec4 .sec4-text {
+  width: 100%;
+  padding: 3rem;
+  padding-top: 1rem;
+  position: relative;
+}
+main .sec4 .sec4-text h1 {
+  width: 85%;
+  font-size: 5rem;
+  font-weight: 900;
+  word-spacing: -14px;
+  color: hsl(43.2, 58.14%, 8.43%);
+}
+main .sec4 .sec4-text h1 span {
+  color: hsl(21.37, 93.19%, 53.92%);
+}
+main .sec4 .sec4-text p {
+  width: 30%;
+  position: absolute;
+  color: hsl(43.2, 58.14%, 8.43%);
+  right: 5%;
+  top: 10%;
+}
+main .sec4 .para {
+  position: absolute;
+  left: 12%;
+  bottom: 15%;
+}
+main .sec4 .para h2 {
+  color: hsl(43.2, 58.14%, 8.43%);
+  font-size: 3rem;
+}
+main .sec4 .para p {
+  width: 620px;
+  line-height: 24px;
+  color: hsl(43.2, 58.14%, 8.43%);
+}
+main .sec4 .sec4-design {
+  position: absolute;
+  right: 5%;
+}
+main .sec4 .sec4-design img {
+  width: 500px;
+}
+main .sec5 {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-top: 2px solid rgba(62, 61, 61, 0.333);
+  border-bottom: 2px solid rgba(62, 46, 46, 0.333);
+}
+main .sec5 .sec5-top {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+main .sec5 .sec5-top .left {
+  width: 580px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+main .sec5 .sec5-top .left h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: hsl(48, 100%, 5.88%);
+}
+main .sec5 .sec5-top .left p {
+  font-size: 1.2rem;
+  color: hsl(48, 100%, 5.88%);
+}
+main .sec5 .sec5-top .circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+}
+main .sec5 .sec5-top .circle img {
+  width: 20px;
+}
+main .sec5 .sec5-center {
+  width: 100%;
+  padding-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+main .sec5 .sec5-center .sec5-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: hsl(48, 100%, 6.86%);
+}
+main .sec5 .sec5-center .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+main .sec5 .sec5-center .left h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+}
+main .sec5 .sec5-center .left p {
+  font-size: 1.2rem;
+  color: rgb(251, 241, 205);
+}
+main .sec5 .sec5-center .right {
+  display: flex;
+  gap: 2rem;
+}
+main .sec5 .sec5-center .right .lowCard {
+  width: 250px;
+  height: 160px;
+  background-color: rgba(255, 230, 0, 0.201);
+  border-radius: 8px;
+  position: absolute;
+  z-index: 400;
+  right: 15%;
+  bottom: 4%;
+  transform: rotate(6deg);
+}
+main .sec5 .sec5-center .right .WhiteCard {
+  width: 280px;
+  height: 240px;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -46%;
+  right: 15%;
+  transform: rotate(-8deg);
+  background-color: rgb(254, 251, 236);
+  z-index: 500;
+}
+main .sec5 .sec5-center .right .circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: orangered;
+}
+main .sec5 .sec5-center .right .circle img {
+  width: 20px;
+  filter: invert(1);
+  transform: rotate(-30deg);
+}
+main .sec5 .sec5-bottom {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+main .sec5 .sec5-bottom .left {
+  width: 580px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+main .sec5 .sec5-bottom .left h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: hsl(48, 100%, 5.88%);
+}
+main .sec5 .sec5-bottom .left p {
+  font-size: 1.2rem;
+  color: hsl(48, 100%, 5.88%);
+}
+main .sec5 .sec5-bottom .circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+}
+main .sec5 .sec5-bottom .circle img {
+  width: 20px;
+}
+main .sec6 {
+  width: 100%;
+  background-color: hsl(48, 100%, 5.88%);
+  background-size: cover;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+main .sec6 .sec6-left {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+main .sec6 .sec6-left h1 {
+  font-size: 7rem;
+  line-height: 40px;
+  padding-top: 2rem;
+  color: hsl(46.36, 100%, 91.37%);
+}
+main .sec6 .sec6-left h2 {
+  font-size: 5.5rem;
+  color: hsl(46.36, 100%, 91.37%);
+}
+main .sec6 .sec6-left .bottom {
+  width: 100%;
+  display: flex;
+  margin-top: 2.5rem;
+  justify-content: space-between;
+}
+main .sec6 .sec6-left .bottom .icons .images img {
+  width: 40px;
+}
+main .sec6 .sec6-left .bottom .icons .copyright p {
+  color: hsl(46.36, 100%, 91.37%);
+}
+main .sec6 .sec6-left .bottom .lat {
+  display: flex;
+  gap: 24px;
+}
+main .sec6 .sec6-left .bottom .lat .latitude {
+  display: flex;
+  flex-direction: column;
+}
+main .sec6 .sec6-left .bottom .lat .latitude h2 {
+  font-size: 1rem;
+}
+main .sec6 .sec6-left .bottom .lat .latitude h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 0px;
+  color: hsl(19.79, 88.99%, 57.25%);
+}
+main .sec6 .sec6-left .bottom .lat .longitude {
+  display: flex;
+  flex-direction: column;
+}
+main .sec6 .sec6-left .bottom .lat .longitude h2 {
+  font-size: 1rem;
+}
+main .sec6 .sec6-left .bottom .lat .longitude h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 0px;
+  color: hsl(19.79, 88.99%, 57.25%);
+}
+main .sec6 .sec6-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: end;
+}
+main .sec6 .sec6-right .icon img {
+  width: 120px;
+}
+main .sec6 .sec6-right .items {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+main .sec6 .sec6-right .items a {
+  color: hsl(46.36, 100%, 91.37%);
+  text-decoration: none;
+}
+
+/* Large Screen Adjustments: 1600px */
+@media (min-width: 1600px) {
+  .sec1 {
+    padding: 5rem 6rem;
+    height: 880px;
+  }
+  .sec1 .sec1-text h1 {
+    font-size: 16rem;
+  }
+  .sec1 .sec1-text h2 {
+    font-size: 11rem;
+  }
+  .sec1 .sec1-absImg img {
+    width: 55vw;
+  }
+  .sec1 .sec1-absText .year {
+    font-size: 14rem;
+  }
+  .sec2 .text {
+    font-size: 3.8rem;
+    width: 1000px;
+  }
+  .sec2 .value h1 {
+    font-size: 18rem;
+  }
+  .sec3 .sec3-left h1 {
+    font-size: 3.6rem;
+  }
+  .sec3 .sec3-left p {
+    width: 50%;
+  }
+  .sec4 .sec4-text h1 {
+    font-size: 6rem;
+  }
+  .sec4 .para h2 {
+    font-size: 3.5rem;
+  }
+  .sec5 .sec5-top h2,
+  .sec5 .sec5-bottom h1 {
+    font-size: 2.4rem;
+  }
+  .sec5 .sec5-center .left h1 {
+    font-size: 2.4rem;
+  }
+}
+/* Larger Screen Adjustments: 1920px */
+@media (min-width: 1920px) {
+  .sec1 {
+    padding: 6rem 8rem;
+    height: 960px;
+  }
+  .sec1 .sec1-text h1 {
+    font-size: 18rem;
+  }
+  .sec1 .sec1-text h2 {
+    font-size: 13rem;
+  }
+  .sec1 .sec1-absImg img {
+    width: 60vw;
+  }
+  .sec1 .sec1-absText .year {
+    font-size: 16rem;
+  }
+  .sec2 .text {
+    font-size: 4.2rem;
+    width: 1100px;
+  }
+  .sec2 .value h1 {
+    font-size: 20rem;
+  }
+  .sec4 .sec4-text h1 {
+    font-size: 6.8rem;
+  }
+  .sec6 .sec6-left h1 {
+    font-size: 8rem;
+  }
+  .sec6 .sec6-left h2 {
+    font-size: 6rem;
+  }
+}/*# sourceMappingURL=style.css.map */

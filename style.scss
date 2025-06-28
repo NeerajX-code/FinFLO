@@ -76,14 +76,14 @@ main {
             padding-top: 4rem;
 
             h1 {
-                font-size: 14rem;
+                font-size: 14rem !important;
                 font-weight: 900;
                 line-height: 160px;
                 color: rgb(251 241 205);
             }
 
             h2 {
-                font-size: 9rem;
+                font-size: 9rem !important;
                 font-weight: 900;
                 color: rgb(251 241 205);
             }
@@ -289,7 +289,7 @@ main {
 
         .sec3-left {
             width: 88%;
-            background-image: url("/MonkeyProject/assets/brownbackground.png");
+            background-image: url("assets/brownbackground.png");
             background-size: cover;
             border-radius: 12px;
             position: relative;
@@ -861,7 +861,7 @@ main {
     }
 
     .sec1 .sec1-absImg img {
-        width: 55vw !important;
+        width: 54vw !important;
     }
 
     .sec1 .sec1-absText .year {
@@ -916,6 +916,10 @@ main {
 
     .sec1 .sec1-text h2 {
         font-size: 11rem !important;
+    }
+
+    .sec1 .sec1-absImg {
+        left: 21% !important;
     }
 
     .sec1 .sec1-absImg img {

@@ -845,20 +845,23 @@ main {
 /* Large Screen Adjustments: 1600px */
 @media (min-width: 1600px) {
     .sec1 {
-        padding: 5rem 6rem;
+        padding: 2rem 2rem;
         height: 880px;
     }
 
     .sec1 .sec1-text h1 {
-        font-size: 16rem;
+        font-size: 16rem !important;
     }
 
     .sec1 .sec1-text h2 {
-        font-size: 11rem;
+        font-size: 10.5rem !important;
+    }
+     .sec1 .sec1-absImg{
+       left: 23% !important;
     }
 
     .sec1 .sec1-absImg img {
-        width: 55vw;
+        width: 55vw !important;
     }
 
     .sec1 .sec1-absText .year {
@@ -908,11 +911,11 @@ main {
     }
 
     .sec1 .sec1-text h1 {
-        font-size: 18rem;
+        font-size: 17rem  !important;
     }
 
     .sec1 .sec1-text h2 {
-        font-size: 13rem;
+        font-size: 11rem !important;
     }
 
     .sec1 .sec1-absImg img {
